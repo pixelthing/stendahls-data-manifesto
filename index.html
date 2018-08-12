@@ -1,0 +1,453 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Stendahls - a manifesto for data insights</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/moon.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<style>
+			dl.gannt {
+				margin: 				0;
+				padding: 				0;
+				display: 				grid;
+				grid-template-columns: 	repeat(100 [col-start]);
+				grid-template-rows: 	repeat(10, 4.4vw [col-start]);
+				grid-column-gap: 		0.5vw;
+				grid-row-gap: 			0.5vw;
+			}
+			.gannt dt {
+				text-align: 			right;
+				margin:					0;
+				font-family: 			'League Gothic', Impact, sans-serif;
+				font-size: 				0.6em;
+				font-weight: 			normal;
+				text-transform: 		uppercase;
+				line-height: 			1.8;
+				grid-row-start: 		1;
+				grid-row-end: 			1;
+				grid-column-start: 		1;
+				grid-column-end: 		3;
+			}
+			.gannt dd {
+				margin:					0;
+				background:				rgba(255,255,255,0.2);
+				grid-row-start: 		1;
+				grid-row-end: 			1;
+				grid-column-start: 		3;
+				grid-column-end: 		5;
+			}
+			.gannt .gannt__dot {
+				background:				#89AD01;
+			}
+			.gannt .gannt__txt {
+				text-align: 			left;
+				font-family: 			inherit;
+				font-size: 				0.4em;
+				text-transform: 		none;
+				line-height: 			2.4;
+				color:				  #89AD01;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<!-- COVER -->
+				<section data-background="img/bg1.png">
+
+					<h1>Data at Stendahls</h1>
+					<h2>A manifesto</h2>
+
+				</section>
+
+			<!-- PART 1 -->
+
+				<section data-background="#89AD01">
+					
+					<h1>What do we want?</h1>
+					<h2>Part 1/4</h2>
+
+				</section>
+
+				<!-- PART 1a -->
+				<section>
+					
+					<section>
+					
+						<h2 class="fragment">Work smarter</h2>
+						<h2 class="fragment">Be more in control</h2>
+						<h2 class="fragment">Inform the creative process</h2>
+						<h2 class="fragment">Improve client collaboration</h2>
+						<h2 class="fragment">Tell stories better</h2>
+
+					</section>
+					
+					<section>
+					
+						<h3>Work smarter</h3>
+						<p>Spend time and resources smarter, learn smarter.</p>
+					
+						<h3>Be more in control</h3>
+						<p>Don't guess, but demonstrate cause and effect of actions.</p>
+					
+						<h3>Inform the creative process</h3>
+						<p>Feed our intuition with real-world feedback.</p>
+					
+						<h3>Improve client collaboration</h3>
+						<p>Connect the client to their customers and get their confidence.</p>
+					
+						<h3>Tell stories better</h3>
+						<p>Data conclusions don't drive smart actions. Communicating them effectively does.</p>
+
+					</section>
+
+				</section>
+
+				<!-- PART 1b -->
+				<section>
+					
+					<h1>we don't want...</h1>
+
+				</section>
+
+				<!-- PART 1c -->
+				<section>
+					
+					<section>
+					
+						<h2 class="fragment">to direct the creative</h2>
+						<h2 class="fragment">to replace UX testing</h2>
+						<h2 class="fragment">to reduce people to "traffic"</h2>
+						<h2 class="fragment">to be creepy</h2>
+						<h2 class="fragment">to be boring</h2>
+						<h2 class="fragment">to think we're smart</h2>
+
+					</section>
+					
+					<section>
+					
+						<h3>to direct the creative</h3>
+						<p>We're looking for insights and signals, not to limit creativity.</p>
+
+					</section>
+
+				</section>
+
+			<!-- PART 2 -->
+
+				<section data-background="#89AD01">
+					
+					<h1>What deliverables can we achieve today?</h1>
+					<h2>Part 2/4</h2>
+
+				</section>
+
+				<!-- PART 2a -->
+				<section>
+					
+					<h2 class="fragment">Web pre-study</h2>
+					<h2 class="fragment">Web post-report</h2>
+					<h2 class="fragment">Web continous monitoring</h2>
+					<div class="fragment" style="display: flex; flex-wrap: wrap; justify-items: center">
+						<h4 style="flex: 50% 0 0;">Internal newsletters</h4>
+						<h4 style="flex: 50% 0 0;">Pitch support</h4>
+						<h4 style="flex: 50% 0 0;">Client training</h4>
+						<h4 style="flex: 50% 0 0;">Internal training</h4>
+						<h4 style="flex: 50% 0 0;">Data policy</h4>
+						<h4 style="flex: 50% 0 0;">Developer tools</h4>
+						<h4 style="flex: 50% 0 0;">Adobe analytics suite</h4>
+						<h4 style="flex: 50% 0 0;">Youtube analysis</h4>
+						<h4 style="flex: 50% 0 0;">Limited social analysis</h4>
+					</div>
+					
+				</section>
+
+				<!-- PART 2b -->
+
+				<section>
+
+						<h2>Data in the product lifecycle</h2>
+					
+						<dl class="gannt">
+
+							<dt style="
+								grid-row-start: 	1;
+								grid-row-end: 		1;
+								grid-column-start: 	1;
+								grid-column-end: 	6;">RFQ</dt>
+							<dd style="
+								grid-row-start: 	1;
+								grid-row-end: 		1;
+								grid-column-start: 	6;
+								grid-column-end: 	8;"></dd>
+
+
+							<dt style="
+								grid-row-start: 	2;
+								grid-row-end: 		2;
+								grid-column-start: 	1;
+								grid-column-end: 	8;">Möte</dt>
+							<dd style="
+								grid-row-start: 	2;
+								grid-row-end: 		2;
+								grid-column-start: 	8;
+								grid-column-end: 	10;"></dd>
+
+
+							<dt style="
+								grid-row-start: 	3;
+								grid-row-end: 		3;
+								grid-column-start: 	1;
+								grid-column-end: 	8;">Pitch</dt>
+							<dd style="
+								grid-row-start: 	3;
+								grid-row-end: 		3;
+								grid-column-start: 	8;
+								grid-column-end: 	14;"></dd>
+
+
+							<dt style="
+								grid-row-start: 	4;
+								grid-row-end: 		4;
+								grid-column-start: 	1;
+								grid-column-end: 	14;">Win</dt>
+							<dd style="
+								grid-row-start: 	4;
+								grid-row-end: 		4;
+								grid-column-start: 	14;
+								grid-column-end: 	16;"></dd>
+
+							<dt style="
+								grid-row-start: 	5;
+								grid-row-end: 		5;
+								grid-column-start: 	1;
+								grid-column-end: 	16;">Investigate</dt>
+							<dd style="
+								grid-row-start: 	5;
+								grid-row-end: 		5;
+								grid-column-start: 	16;
+								grid-column-end: 	42;"></dd>
+
+							<dt style="
+								grid-row-start: 	6;
+								grid-row-end: 		6;
+								grid-column-start: 	1;
+								grid-column-end: 	38;">Build</dt>
+							<dd style="
+								grid-row-start: 	6;
+								grid-row-end: 		6;
+								grid-column-start: 	38;
+								grid-column-end: 	72;"></dd>
+
+
+							<dt style="
+								grid-row-start: 	7;
+								grid-row-end: 		7;
+								grid-column-start: 	1;
+								grid-column-end: 	72;">Launch</dt>
+							<dd style="
+								grid-row-start: 	7;
+								grid-row-end: 		7;
+								grid-column-start: 	72;
+								grid-column-end: 	78;"></dd>
+
+
+							<dt style="
+								grid-row-start: 	8;
+								grid-row-end: 		8;
+								grid-column-start: 	1;
+								grid-column-end: 	78;">Optimering</dt>
+							<dd style="
+								grid-row-start: 	8;
+								grid-row-end: 		8;
+								grid-column-start: 	78;
+								grid-column-end: 	90;"></dd>
+
+
+							<dt style="
+								grid-row-start: 	9;
+								grid-row-end: 		9;
+								grid-column-start: 	1;
+								grid-column-end: 	96;">Report</dt>
+							<dd style="
+								grid-row-start: 	9;
+								grid-row-end: 		9;
+								grid-column-start: 	96;
+								grid-column-end: 	100;"></dd>
+							
+							
+							<!-- -->
+
+							<dt class="gannt__txt" style="
+								grid-row-start: 	2;
+								grid-row-end: 		2;
+								grid-column-start: 	10;
+								grid-column-end: 	100;">Demonstrate our methods to the client</dt>
+							<dd class="gannt__dot" style="
+								grid-row-start: 	2;
+								grid-row-end: 		2;
+								grid-column-start: 	9;
+								grid-column-end: 	10;"></dd>
+							
+							<dt class="gannt__txt" style="
+								grid-row-start: 	3;
+								grid-row-end: 		3;
+								grid-column-start: 	14;
+								grid-column-end: 	100;">Explain strategy & expectations</dt>
+							<dd class="gannt__dot" style="
+								grid-row-start: 	3;
+								grid-row-end: 		3;
+								grid-column-start: 	9;
+								grid-column-end: 	12;"></dd>
+							
+							<dd class="gannt__dot" style="
+								grid-row-start: 	5;
+								grid-row-end: 		5;
+								grid-column-start: 	16;
+								grid-column-end: 	22;"></dd>
+							
+							<dd class="gannt__dot" style="
+								grid-row-start: 	5;
+								grid-row-end: 		5;
+								grid-column-start: 	30;
+								grid-column-end: 	32;"></dd>
+							
+							<dd class="gannt__dot" style="
+								grid-row-start: 	5;
+								grid-row-end: 		5;
+								grid-column-start: 	38;
+								grid-column-end: 	40;"></dd>
+
+							<dt class="gannt__txt" style="
+								grid-row-start: 	5;
+								grid-row-end: 		5;
+								grid-column-start: 	42;
+								grid-column-end: 	100;">Exploratory analysis, ongoing team support</dt>
+							
+							<dd class="gannt__dot" style="
+								grid-row-start: 	6;
+								grid-row-end: 		6;
+								grid-column-start: 	65;
+								grid-column-end: 	72;"></dd>
+
+							<dt class="gannt__txt" style="
+								grid-row-start: 	6;
+								grid-row-end: 		6;
+								grid-column-start: 	72;
+								grid-column-end: 	100;">Add measurement points, goals, dashboards</dt>
+							
+							<dd class="gannt__dot" style="
+								grid-row-start: 	7;
+								grid-row-end: 		7;
+								grid-column-start: 	72;
+								grid-column-end: 	74;"></dd>
+							
+							<dd class="gannt__dot" style="
+								grid-row-start: 	7;
+								grid-row-end: 		7;
+								grid-column-start: 	76;
+								grid-column-end: 	78;"></dd>
+
+							<dt class="gannt__txt" style="
+								grid-row-start: 	7;
+								grid-row-end: 		7;
+								grid-column-start: 	78;
+								grid-column-end: 	100;">Monitor launch, produce early findings</dt>
+							
+							<dd class="gannt__dot" style="
+								grid-row-start: 	8;
+								grid-row-end: 		8;
+								grid-column-start: 	78;
+								grid-column-end: 	82;"></dd>
+							
+							<dd class="gannt__dot" style="
+								grid-row-start: 	8;
+								grid-row-end: 		8;
+								grid-column-start: 	86;
+								grid-column-end: 	90;"></dd>
+
+							<dt class="gannt__txt" style="
+								grid-row-start: 	8;
+								grid-row-end: 		8;
+								grid-column-start: 	90;
+								grid-column-end: 	100;">Tweak & improve</dt>
+
+							<dd class="gannt__dot" style="
+								grid-row-start: 	9;
+								grid-row-end: 		9;
+								grid-column-start: 	96;
+								grid-column-end: 	100;"></dd>
+	
+							
+						</dl>
+	
+					</section>
+
+				<!-- PART 2c -->
+
+				<section>
+					
+					<h1>What expertise do we want to add?</h1>
+
+				</section>
+
+				<!-- PART 2d -->
+				<section>
+					
+					<h3 class="fragment">Social</h3>
+					<h3 class="fragment">SEO</h3>
+					<h3 class="fragment">Brand research</h3>
+					<h3 class="fragment">Machine learning</h3>
+					<h3 class="fragment">Marketing automation</h3>
+					<h3 class="fragment">A-B testing</h3>
+					<h3 class="fragment">Data warehousing, R, Python</h3>
+					
+				</section>
+
+			<!-- PART 3 -->
+
+				<section data-background="#89AD01">
+					
+					<h1>What's the next step?</h1>
+					<h2>Part 4/4</h2>
+
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
